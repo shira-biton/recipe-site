@@ -1,0 +1,44 @@
+body {
+   color: rgb(143, 139, 139);
+   background-color: lightgray;
+}
+h2{color: deeppink;}
+#recipe-title{ color: bisque;font-size: 40px;}
+.highlight{background-color: rgb(101, 85, 85);}
+.intro{color: darkcyan;font-size: 20px;}
+.block {
+    background-color: white;
+    width: 700px;
+    box-shadow: 0 2px 8px gray;
+}
+.block:hover { box-shadow: 0 4px 10px gray; }
+
+#main-image{width: 400px; box-shadow: 0 2px 8px gray;}
+#info-table{width: 100%;}
+.side-image{width: 200px; height: 200px;}
+#nav a:hover {
+    color: darkred;
+}
+.ingredients-list li:first-child { color: aquamarine; }
+.steps-list li:last-child { color: chartreuse; }
+tbody tr:hover{background-color: darkkhaki;}
+.ingredients-list li::before {
+    content: "$ ";
+    color: green;
+}
+h2::after{ content: "^ ";color: lightpink;}
+ #page-footer p::before{ content: "©"}
+ .container{width: 900px;}
+
+
+
+
+
+
+
+/*עדיף להשתמש בסלקטור אחד של class כי זה חוסך קוד מיותר ומונע חזרות
+ ככה גם הרבה יותר קל לשנות את העיצוב בעתיד  עושים את זה בשורה אחת במקום לעבור ולשנות בחמישה מקומות שונים
+התמונה התעוותה ונמעכה
+זה קרה כי קבעתי לה גם רוחב וגם גובה
+כדי למנוע את זה הייתי מגדירה רק רוחב או רק גובה
+ואז התמונה הייתה מסתדרת לבד*/
