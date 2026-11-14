@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 1rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+input:not([type="checkbox"], [type="radio"]), select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+fieldset {
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    padding: 12px;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #2e5597;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    accent-color: #2e5597;
+}
+
+button {
+    background-color: #2e5597;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    height: 44px;
+    width: 100%; 
+}
+
+button:hover {
+    background-color: #1f3b6d;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+@media (width >= 700px) {
+    form {
+        padding: 2rem;
+    }
+    .row {
+        flex-direction: row;
+    }
+    .row .field {
+        flex: 1;
+    }
+    button {
+        width: auto;
+        align-self: center;
+    }
+}
+/* צריך לגלול ממש הרבה
+יש גלילה גם לצדדים
+משתנה ב700 לשורה
+
+
+
+  שם הזיהוי משמש את הדפדפן כדי לחבר בין הכותרת לשדה שבו כותבים
+   השם השני הוא השם שדרכו המחשב המרכזי מקבל את הנתונים
+
+  התחלתי מהמסך הקטן כי שם הכי נוח לסדר את הכל בטור אחד יורד 
+  אם לא היתי משתמשים בתנאי השדות היו נשארים עומדים בטור צר וארוך גם במסכים רחבים ולא היו מסתדרים בשורה
+
+  בכתובת הדף למעלה רואים שנוספים סימנים וכל מה שכתבתי בטופס 
+  זה מלמד שהדפדפן לקח את המידע ושלח אותו יחד עם השמות של השדות כדי שנראה  מה נשלח
+*/
+
